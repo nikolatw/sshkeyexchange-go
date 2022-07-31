@@ -5,6 +5,7 @@ tasks:
     cmds:
       - rm -fr keyexchange
       - goreleaser build --snapshot
+      - go run scripts/renamer/main.go
 
   sshtest:
     cmds:
